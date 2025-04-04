@@ -167,5 +167,55 @@ comment
 # b = 'banana'
 # print(a , b)
 
+# Global Variable:
+    # The variables which are created outside the function are called global variable . We can access
+    # its values inside as well as outside the function like this
+
+# name = 'Muzammil'
+
+# def greet():
+#     print('Hello ' + name)
+
+# greet()
+
+    # if we create a variable inside the function with the same name it will be local variable
+    # and can only used inside a function . if we try to access its values outside a function .it
+    # throws error or if same variable present in global space so its value is printed . like this
+
+# name = 'Muzammil'
+
+# def greet():
+#     name = 'Ahmed'
+#     print('Hello ' + name)
+
+# greet()
+
+# print('Hello ' + name)
+
+    # if we want to convert local variable inside the function into global variable we need to use 
+    # global keyword . 
+
+# def greet():
+#     global name
+
+#     name = 'Muzammil'
+
+# greet()
+
+# print('Hello ' + name)
+
+    # We can also use global keyword if we want to change values of global variable inside a function
+
+# name = 'Muzammil'
+
+# def greet():
+#     global name
+
+#     name = 'Ahmed'
+#     print('Hello ' + name)
+
+# greet()
+
+# print('Hi ' + name)
 
 
