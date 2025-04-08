@@ -54,8 +54,27 @@
 # print(y)
 # print(z)
 
- 
+# Type Conversion :
+    # We can convert the number from 1 type to another types with their methods like int , float ,
+    #  complex . but we can not convert complex number to other type .
 
+# a = 20
+# b = 14.5
+# c = 20j
+# print(float(a)) 
+# print(complex(b))
 
+# This results in error 
+# print(int(c))
+
+# Random Number :
+    # Python does not have a random() built-in function to make random number . but it has a built-in
+    # module called Random that can be used to make random number
+
+# We import  module and display random numbr from 1 to 9
+
+# import random
+
+# print(random.randrange(1 , 10))
 
 
