@@ -19,7 +19,7 @@
 # PYTHON LIST:
     # List are used to store multiple items in a single variable
     # List are one of the 4 built-in datatypes in python used to store collection of data , the other
-    # 3 are Tule , Sets and Dictionary all with differnet qualities and usage .
+# 3 are Tule , Sets and Dictionary all with differnet qualities and usage .
     # List are created with [] brackets . like this
 
 # name_list = ['Arham' , 'Ahmed' , 'Ayyan']
@@ -31,16 +31,16 @@
 
 # LIST ORDER :
     # When we say list are ordered it means that the items have a defined order , and that order will 
-    # not be changed .
+# not be changed .
     # If we add a new item to a list . it will be added at the end of the list 
 
 # NOTE :    
     # There are some methods that will change the order of list but in general the order of
-    # list is not changed
+# list is not changed
 
 # CHANGEABLE :
     # The list is changeable which means the items in list can be add / update / delete after
-    # the list is created
+# the list is created
 
 # LIST DUPLICATES :
     # Since list are ordered it can allow duplicate values in it . like this 
@@ -50,7 +50,7 @@
 
 # LIST LENGTH :
     # To find the number of elements presents in list we have a function called len () . It prints
-    # the number of length
+# the number of length
 
 # name_list = ["Arham" , 'Ahmed' , 'Ali']
 # print(len(name_list))
@@ -79,7 +79,7 @@
 
 # PYTHON ACCESS LIST ITEM :
     # List items are indexed and we can access it used indexing. Remember the first indexing
-    # start with 0 . like this
+# start with 0 . like this
 
 # list_item = ['Arham' , 2 , True]
 # print(list_item[0])
@@ -117,8 +117,228 @@
 # CHECK IF ITEM EXIST :
     # To specify the item present in list or not we use 'in' keyword . like this :
 
-new_list = ['Arham' , 'Khan' , 56 , False]
-if 56 in new_list:
-    print('Yes it is present in list')
+# new_list = ['Arham' , 'Khan' , 56 , False]
+# if 56 in new_list:
+#     print('Yes it is present in list')
+
+# CHANGE ITEM VALUE :
+    # To change the value of specific item we refer index number
+
+# list_value = [1 , 5 , ' Arham' , 'Fan' , True]
+# list_value[1] = 'Khan'
+# print(list_value)
+
+# CHANGE A RANGE OF ITEMS :
+    # To change the value of items in a specific range , define a list with new values and refer 
+# to the range of index numbers where you want to insert new values 
+
+# list_value = [1 , 5 , ' Arham' , 'Fan' , True]
+# list_value[1 : 3] = ['Tyre' , 'Cupboard']
+# print(list_value)
+
+    # If we insert more items than you replace , the new items will be inserted where you specified
+# and the remaining item will move accordingly :
+
+# list_value = ['arham' , 'pasha' , 2]
+# list_value[1 : 2] = ['khan' , 55]
+# print(list_value)  
+
+# Note :
+    # The length of list will be changed if the number of items inserted does not match with the item
+# replaced
+
+    # If we insert less item than we replace , the new item will be inserted where we specified , and
+# the remainging item will move accordingly . 
+
+# my_list = ['arham' , 'apple' , 'jar']
+# my_list[1 : 3] = ['marks']
+# print(my_list) 
+
+# INSERT ITEMS :
+    # To insert an items in list list without removing any existing values than we use insert() 
+# method . 
+    # The insert method is used to insert items at specified index
+
+# list_item = [2, 4 , 6 , 'Grow' , True]
+# list_item.insert(2 , 'Khan')
+# print(list_item)  
+
+# ADD LIST ITEMS :
+# my_list = ['arham' , 'apple' , 'orange' , True]
+
+# 1.  APPEND METHOD ():
+    # To add an item at the end of list we use append() method
+
+# my_list.append('Prize')
+# print(my_list)
+
+# 2. INSERT METHOD ():
+    # To insert an item at a specified index we use insert() method
+
+# my_list.insert(2 , 'kali')
+# print(my_list) 
+
+# 3. EXTEND METHOD ():
+    # TO append elements from another list to current list we use extend() method.
+
+# new_list = [456 , False , 'Cow']
+# my_list.extend(new_list)
+# print(my_list) 
+
+# ADD ANY ITERABLE :
+    # The extend() method does not have to append list , we can add any iterable object (tuples ,
+# sets , dictionaries , etc)
+
+# Now we add elements of tuple in list 
+
+# new_tuple = ('Kahn' , 'pk' , 'lala')
+# my_list.extend(new_tuple)
+# print(my_list) 
+
+# REMOVE LIST ITEM :
+
+# 1. REMOVE METHOD(): 
+    # The remove item is ued to remove specified item
+
+# my_list.remove('orange')
+# print(my_list)
+
+    # If there are more than one values in specified item then it will remove the first
+    # occurance
+
+# my_list1 = ['apple' , 'banana' , 'orange' , 'banana']
+# my_list1.remove('banana')
+# print(my_list1)
+
+# 2. POP METHOD ():
+    # To remove items from specified index we use pop () method .
+
+# my_list.pop(2)
+# print(my_list) 
+
+    # If we donot specify the index the pop method will remove elements from last index 
+
+# my_list.pop()
+# print(my_list)
+
+# 3. DEL KEYWORD ():
+    # The del keyword is also used to delete items at specified index
+
+# del my_list[1]
+# print(my_list)
+
+    # The del keyword remove whole list if we donot specify the index
+
+# del my_list
+# print(my_list)
+
+# 4. CLEAR METHOD :
+    # The clear method is used to empty the list . it can not delete list , it just removes all 
+# list items from it
+
+# my_list.clear()
+# print(my_list)
+
+# LOOP THROUGH LIST :
+    # we cn loop through the list item by using for loop .
+
+# new_list = ['apple' , 'orange' , 'banana' , 'lemon']
+# for items in new_list:
+#     print(items)
+
+# LOOP THROUGH INDEX NUMBER :
+    # we can also loop through the items by using their index number . We use range() and len()
+# function to make a suitable iterable.
+
+# for i in range(len(new_list)):
+#     print(new_list[i])
+
+# USING A WHILE LOOP :
+    # we can also loop through the items by using a while loop . 
+    # use len() function to determine the length of the list , then start at 0 and loop your way
+# through the list items by refering to their indexes . 
+    # Remember to increase the +1 after each iteration
+
+# new_list = ['apple' , 'orange' , 'banana' , 'lemon']
+# i = 0
+# while i < len(new_list):
+#     print(new_list[i])
+#     i += 1
+
+# LOOP THROUGH LIST COMPREHENSION :
+    # list comprehension offers the shortest syntax for looping through list:
+
+# new_list = ['apple' , 'orange' , 'banana' , 'lemon']
+# [print(x) for x in new_list]
+   
+# LIST COMPREHENSION :
+    # list comprehension offers a shorter syntax when we want to create a new list based on the 
+# values of an existing list .
+
+# Example:
+    # Based on the list of fruits , we want a new list , containing only the fruits with the letter 
+# "a" in the name. withour list comprehension we have to write a for statement with a conditional
+# test inside . 
+
+# fruits = ['apple' , 'banana' , 'orange' , 'kiwi']
+# new_list = []
+
+# for fruit in fruits:
+#     if 'a' in fruit:
+#         new_list.append(fruit)
+
+# print(new_list)
+
+    # With list comprehension we can do this in 1 line of code .
+
+# fruits = ['apple' , 'banana' , 'orange' , 'kiwi']
+
+# new_list = [fruit for fruit in fruits if "a" in fruit]
+
+# print(new_list)
+
+# THE SYNTAX :
+
+# new_list = [expression for item in iterable if condition == True]
+
+# CONDITION :
+    # The condition is like a filter that only accepts the item which is True
+
+# new_list = [x for x in fruit if x != 'apple']
+
+    # The condition if x != 'apple' will return True for all elements other than 'apple' making 
+# the new list contain all fruits except apple
+    # The condition is optional and can be omitted
+
+# new_list = [x for x in fruits]
+
+# ITERABLE :
+    # The iterable can be any iterable object like list , tuple , sets etc
+
+# new_list = [x for x in range(10)]
+# print(new_list)
+
+    # same example with a consition .
+ 
+# new_list = [x for x in range(10) if x > 5]
+# print(new_list)
+
+# EXPRESSION :
+    # The expression is the current item in the iteration , but it is also the outcome , which
+# we can manipluate before it ends up like a list in new list .
+
+# new_list = [x.upper() for x in fruits]
+
+    # We can set the outcome whatever we like .
+
+# new_list = ['Hello' for x in fruits]
+
+    # The expression can also contains filter not like condition but as a way to manipulate outcome
+
+# new_list = [x if x != 'banana' else 'orange' for x in fruits]
+
+# The expression in the above statement says :
+    # Return the item if it is not banana , if it is banana return orange
+
 
 
