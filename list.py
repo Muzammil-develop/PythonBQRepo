@@ -340,5 +340,119 @@
 # The expression in the above statement says :
     # Return the item if it is not banana , if it is banana return orange
 
+# SORT LIST :
+
+# 1 .SORT LIST ALPHANUMERICALLY :
+    # list object have a sort method that will sort list aplhanumeriacally , ascending ,by default:
+
+# SORT LIST ALPHABATICALLY :
+# new_list = ['Apple' , 'Mango' , 'Banana' , "Orange"]
+# new_list.sort()
+# print(new_list)
+
+# SORT LIST NUMERICALLY:
+# new_list = [100,56,15,230,5]
+# new_list.sort()
+# print(new_list)
+
+# SORT DECENDING:
+    # TO sort list decending we use a keyword called resverse=True
+
+# new_list = ['Apple' , 'Mango' , 'Banana' , "Orange"]
+# new_list.sort(reverse=True)
+# print(new_list)
+
+# new_list = [100,56,15,230,5]
+# new_list.sort(reverse=True)
+# print(new_list)
+
+# CUSTOMIZE SORT FUNCTION :
+    # We can also customize our sort function by using the keyword argument key = Function
+    # The function will return a number that is used to sort the list(the lower number first)
+
+# def myfunc(n):
+#     return abs (n -50)
+
+# new_list =  [100, 50, 65, 82, 23]
+# new_list.sort(key=myfunc)
+# print(new_list)
+
+# CASE INSENSITIVE SORT:
+    # be default sort is case-sensitive . resulting in all capital letters being sorted before lower 
+# case letters
+
+# new_list = ['Apple' , 'banana' , 'Orange' , 'mango']
+# new_list.sort()
+# print(new_list)
+
+    # Luckily we can use a built-in function as a key function when sorting a list . 
+    # So if we want a case-insensitive sort we use str.lower as a key function
+
+# new_list.sort(key=str.lower)
+# print(new_list)
+
+# REVERSE ORDER :
+    # If we want to reverse order of list  , regardless of alphabet .The reverse() method reverses the
+# current order of the lsit
+
+# new_list = ['Apple' , 'banana' , 'Orange' , 'kiwi']
+# new_list.reverse()
+# print(new_list)   
+
+# COPY LIST :
+    # If we want to copy the list we can not do this list1 = list2 , because list2 will only be a 
+# reference to list1 . and changes made on list1 will automatically appear on list2
+
+# 1 .USE COPT METHOD():
+    # We can use a built-in list method copy() to copy a list
+
+# my_list = ['Arham' , 55 , 'Fan' , False]
+# list2 = my_list.copy()
+# print(my_list , list2)
+
+# 2 .LIST METHOD():
+    # Another way to copy the list is using list method .
+
+# my_list = ['Arham' , 55 , 'Fan' , False]
+# list2 = list(my_list)
+# print(my_list , list2)
+
+# 3. USING SLICE OPERATOR :
+    # We can also copy the list by using slicing
+
+# my_list = ['Arham' , 55 , 'Fan' , False]
+# list2 = my_list[:]
+# print(my_list , list2)
+
+# JOIN LIST :
+    # There are several ways to join , concatinate two or more list .One of the easiest way by using "+"
+# operator
+
+# my_list = ['Arham' , 55 , 'Fan' , False]
+# new_list = ['khybar' , 'board' , 85 , True]
+
+# print(my_list + new_list)
+
+    # Another way to join 2 list is by appending all items from list2 to list1 one-by-one
+
+# my_list = ['Arham' , 55 , 'Fan' , False]
+# new_list = ['khybar' , 'board' , 85 , True]
+
+# for item in new_list:
+#     my_list.append(item)
+
+# print(my_list)
+
+    # We can also use extend() method . where the purpose is to add 1 list from another list
+
+
+# my_list = ['Arham' , 55 , 'Fan' , False]
+# new_list = ['khybar' , 'board' , 85 , True]
+
+# my_list.extend(new_list)
+# print(my_list)
+
+
+
 
 
