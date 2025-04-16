@@ -118,3 +118,116 @@
 # new_tuple = ('Apple',  'banana' , 'cherry' , 'kiwi' , 'pineapple')
 # if 'banana' in new_tuple:
 #     print('Yes it is present')
+
+# UPDATE TUPLES:
+    # Tuples are unchangeable , means we can not change , add or remove items once tuple is created . 
+# But  there are some workarounds 
+
+# CHANGE TUPLE VALUES:
+    # If we want to change the values of tuple . we have to first convert it into list , then change
+# values and then convert it back into tuple .
+
+# fruits = ('apple' , 'mango' , 'banana')
+# list_view = list(fruits)
+# list_view[1] = 'kiwi'
+
+# result = tuple(list_view)
+# print(result)
+
+# ADD ITEMS :
+    # Since tuple are immutable so they donot have built-in append method() . but there are other
+# ways to add items to tuple 
+
+# 1. CONVERT INTO LIST():
+    # Just like the workaround for changing tuple , we can convert it into list , add our items and
+# convert it back into tuples .
+
+# fruits = ("apple" , 'orange' , 'banana')
+# my_list= list(fruits)
+
+# my_list.append('mango')
+# result = tuple(my_list)
+
+# print(result)
+
+# 2. ADD TUPLE TO TUPLE :
+    # We are allowed to add tuples to tuples, so if we want to add one or more items , create a new 
+# tuple with the items and add it into existing tuple .
+
+# fruits = ('apple' , 'banana' , 'orange')
+# new_fruits = ('mange' , 'kiwi')
+
+# print(fruits + new_fruits)
+
+# NOTE :
+    # When created a new tuple with single item donot forgot to add , at the end of items . otherwise
+# It can be considered as string not tuple 
+
+# REMOVE ITEMS :
+    # We can not remove items from tuple , but we can follow same procedure which we follow to add
+# items  in tuple , to remove elements from it .
+
+# fruits = ('apple' , 'banana' , 'orange')
+# my_list = list(fruits)
+
+# my_list.remove('apple')
+
+# result = tuple(my_list)
+# print(result)
+
+    # We can completely delete tuples if we want by using del keyword .
+
+# fruits = ('apple' , 'banana' , 'orange')
+# del fruits
+# print(fruits)
+
+# UNPACK TUPLES :
+    # When we create a tuple we normally assign values to it . This is called packing a tuples.
+
+# fruits = ('apple' , 'banana')
+
+    # But in python we are also allowed to extract values back into variables . This is called
+# Tuple unpacking
+
+# fruits = ('apple' , 'banana')
+# a , b = fruits
+
+# print(a)
+# print(b)
+
+# NOTE :
+    # The number of variables must match the number of values in the tuple , if not we must use
+# an asterisk to collect the remaining values as a list.
+
+# USING ASTRISK:
+    # If the number of variables is less than the number of values , we can add asterisk to the 
+# variables name and the values will be assigned to the variable as a list .
+
+# fruits = ('apple' , 'banana' , 'mango' , 'orange')
+# a , b ,*c = fruits
+
+# print(a)
+# print(b)
+# print(*c)
+
+    # If the asterisk is added to another variable name than the last , python will assign values
+# to the variable until the numbers of values left matches the number of variables left.
+
+# fruits = ('apple' , 'banana' , 'mango' , 'orange')
+# a,*b,c = fruits
+
+# print(a)
+# print(*b)
+# print(c)
+
+# LOOP TUPLES :
+    # 
+
+
+
+
+
+
+
+
+
