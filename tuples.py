@@ -221,7 +221,46 @@
 # print(c)
 
 # LOOP TUPLES :
-    # 
+    # We can loop through tuple items by using for loop
+
+# fruits = ('apple' , 'banana' , 'orange')
+# for fruit in fruits:
+#     print(fruit)
+
+# LOOP THROUGH INDEX NUMBERS:
+    # We can also loop through itmes by referring to index numbers .
+    # We use range() and len() function to create a suitable iterable .
+
+# fruits = ('apple' , 'banana' , 'orange')
+# for items in range(len(fruits)): 
+#     print(fruits[items])
+
+# WHILE LOOP :
+    # We can loop through the tuple items by using while loop . 
+    # Use len function to determine the length of tuple , then start at 0 and loop your way
+# through tuple items by referring to their indexes . 
+    # Remember to increase index number after each iteration
+
+# fruits = ('apple' , 'banana' , 'orange')
+
+# i = 0
+# while i < len(fruits):
+#     print(fruits[i])
+#     i = i + 1
+
+# JOIN TUPLES :
+    # To join two or more tuples we use '+' operator .
+
+# fruits = ('apple' , 'banana' , 'orange')
+# fruits2 = ('kiwi' , 'mango')
+# print(fruits + fruits2)
+
+# MULTIPLY TUPLES :
+    # If we want to multiply the content of the tuple a given number of times , then we use '*'
+# operator .
+
+# fruits = ("apple" , "banana" , "orange")
+# print(fruits * 2) 
 
 
 
