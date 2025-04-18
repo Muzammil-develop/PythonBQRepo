@@ -167,4 +167,181 @@
 # del my_set
 # print(my_set)
 
+# SETS LOOPS:
+    # We can loop through set items by using for loop .
+
+# my_set = {"apple" , 'banana' , 'orange'}
+# for items in my_set:
+#     print(items) 
+
+# JOIN SETS:
+    # There are several ways to join 1 or more sets . 
+    # The union() and update() method joins all items from both sets .
+    # The intersection() method keeps only duplicates .
+    # The difference() method keeps the item from 1 set that are not present in 2 set
+    # The symmetric_difference () methods keep all items except duplicates.
+
+# 1. UNION():
+    # The union method returns new sets after combining 1 or more sets
+
+# fruits = {'apple' , 'orange' , 'mango'}
+# fruits2 = {'banana' ,'apple' , 'kiwi'}
+
+# print(fruits.union(fruits2))
+
+    # We can also use | operator instead of union .
+
+# fruits = {'apple' , 'orange' , 'mango'}
+# fruits2 = {'banana' ,'apple' , 'kiwi'}
+# print(fruits | fruits2)
+
+# JOIN MULTIPLE SETS:
+    # All the joining methods and operators can be used to join multiple sets. 
+    # When using a method , just add more sets in parenthesis , separated by comma 
+
+# set1 = {"a" , 'b' , ' c'}
+# set2 = {1 , 2 , 3}
+# set3 = {'John' , 'Elia'}
+# set4 = {True , False}
+
+# new_set = set1.union(set2 , set3 , set4)
+# print(new_set)
+
+    # When usinh the | operators separate sets with more | operator
+
+# set1 = {"a" , 'b' , ' c'}
+# set2 = {1 , 2 , 3}
+# set3 = {'John' , 'Elia'}
+# set4 = {True , False}
+
+# new_set = set1 | set2 | set3 | set4
+# print(new_set)
+
+# JOIN SETS AND TUPLE :
+    # The union() method allows us to join sets with other datatypes . lik list or tuples. The
+# result will be set .
+
+# my_set = {'apple' , 'a' , 5}
+# my_tuple = ('banana' , 8)
+
+# print(my_set.union(my_tuple))
+
+# NOTE:
+    # The | operators only allow us to join sets with sets , not with other datatypes like you can
+# with union . 
+
+# 2 . UPDATE():
+    # The update () method insert all items from 1 sets to another . The updates change the original
+# sets and does not return new set .
+
+# set1 = {2 , 4 , 6}
+# set2 = {1 , 3 , 5}
+
+# set1.update(set2)
+# print(set1)
+
+# NOTE:
+    # Both union and update method exclude duplicate values .
+
+# INTERSECTION:
+    # The intersection() methods return a new set , that only contains a item that are present
+# in both sets .
+
+# set1 = {2 , 4 , 6 , 8 , 10}
+# set2 = {1 , 2 , 3 , 4 , 5 , 6 , 7 , 8 , 9 , 10}
+
+# print(set1.intersection(set2))
+
+    # We can also use & operator instead of intersection() method .
+
+# set1 = {2 , 4 , 6 , 8 , 10}
+# set2 = {1 , 2 , 3 , 4 , 5 , 6 , 7 , 8 , 9 , 10}
+
+# print(set1 & set2)
+
+# NOTE :
+    # The & operator only allows you to join sets with sets not with other datatypes like in
+# intersection method .
+
+    # Te intersection_update() method can only return duplicates values . but it will chang the original set
+# instead of returning new set
+
+# set1 = {2 , 4 , 6 , 8}
+# set2 = {1 , 2 , 3 , 4 , 5 , 6 , 7 , 8}
+
+# set1.intersection_update(set2)
+
+# print(set1)
+
+    # The value Trur and 1 treat as same value , also same for False and 0
+
+# set1 = {'apple' , 1 , 'banana' , 0}
+# set2 = {'john' , True , 'kiwi' , False}
+
+# set1.intersection(set2)
+# print(set1)
+
+# 3 . DIFFERENCE():
+    # The difference() method will return a new set that will only contains item from 1 set that
+# are not present in other set 
+
+# set1 = {'ahmed' , 'john' , 'rafay'}
+# set2 = {'kali' , 'ahmed' , 'lala'}
+
+# print(set1.difference(set2))
+
+    # We can use the - operator instead of difference () method and get same result .
+     
+# set1 = {'ahmed' , 'john' , 'rafay'}
+# set2 = {'kali' , 'ahmed' , 'lala'}
+
+# print(set1 - set2)
+
+# NOTE: 
+    # The - operators will only allows to join sets with sets  and not with other datatypes . like
+# with difference method .
+
+    # The difference_update() method returns the element from 1 set which are not present in other set
+# but it will make change in original set instead of returning a new set .
+
+# set1 = {'ahmed' , 'john' , 'rafay'}
+# set2 = {'kali' , 'ahmed' , 'lala'}
+
+# set1.difference_update(set2)
+
+# print(set1)
+
+# 4 . SYMMETRIC_DIFFERENCE():
+    # The symmetric_differnece method will keep only that elements which are not present in both set
+
+# set1 = {'ahmed' ,'apple' , 'banana'}
+# set2 = {'ahmed' , 'banana' , 'mango'}
+
+# print(set1.symmetric_difference(set2))
+
+    # We can use ^ operator instead of symmetric_difference() method and get the same result
+
+# set1 = {'ahmed' , 'apple' , 'banana'}
+# set2 = {'ahmed' , 'banana' , 'mango'}
+
+# print(set1 ^ set2)
+
+# NOTE:
+    # The ^ operator will only allows us to join sets with sets and not with other datatypes just like 
+# in symmetric_difference () method .
+
+    # The symmetric_difference_update () method will also keep all elements except duplicates . but
+# it will make changes in original set and will not retrun in new set
+
+# set1 = {'apple' , 'banana' , 'orange'}
+# set2 = {'ahmed' , 'banana' , 'kiwi'}
+
+# set1.symmetric_difference_update(set2)
+# print(set1)
+
+
+
+
+
+
 
