@@ -161,28 +161,264 @@
 # CHECK IF KEY EXISTS ?:
     # To determine the specified key present in the dictionary we use 'in' keyword .
 
-my_dict = {
-    "name" : "Muzammil",
-    "age" : 20
-}
+# my_dict = {
+#     "name" : "Muzammil",
+#     "age" : 20
+# }
 
-if 'age' in my_dict:
-    print('Yes age is present as key in dictionary')
+# if 'age' in my_dict:
+#     print('Yes age is present as key in dictionary')
 
+# CHANGE VALUES :
+    #  We can change specific values by referring its key name in dictionary . 
 
+# my_dict = {
+#     "name" : "Mzammil",
+#     'year_of_birth' : 2005
+# }
+# my_dict["year_of_birth"] = 2000
 
+# print(my_dict)
 
+# UPDATE DICTIONARY :
+    # We can update the values inside dictionary by using Update() method . 
+    # The argument must be dictionary or an iterable object with key: value pairs 
 
+# my_dict = {
+#     "brand" : "Toyota",
+#     "model" : "Corolla"
+# }
+# my_dict.update({"'model" : "Vitz"})
+# print(my_dict)
 
+# ADDING ITEMS :    
+    # Adding an item to the dictionary is done by using a new index key and assigning a value
+# to it . 
 
+# my_dict = {
+#     "brand" : "Toyota",
+#     "model" : "Corolla"
+# }
+# my_dict['color'] = 'black'
+# print(my_dict)
 
+# UPDATE DICTIONARY :
+    # The update () method will update the dictionary with the items from  a given arguments , if 
+# the items is not exists it will add it 
+    # The argument must be dictionary or any iterable objects with key , value pair 
 
+# my_dict = {
+#     "brand" : "Toyota",
+#     "model" : "Corolla"
+# }     
 
+# my_dict.update({'color' : "black"})
+# print(my_dict)
 
+# REMOVING ITEMS :
+    # There are several methods to remove items from dictionary . 
 
+# 1 . POP ():
+    # The pop() method will remove items with specified key name 
 
+# my_dict = {
+#     "brand" : "Toyota",
+#     "model" : "Corolla"
+# }
 
+# my_dict.pop('model')
+# print(my_dict)
 
+# 2 . POPITEM ():
+    # The pop items will remove the last inserted items (in version before 3.7 a random item is removed)
+
+# my_dict = {
+#     "brand" : "Toyota",
+#     "model" : "Corolla"
+# }
+
+# my_dict.popitem()
+# print(my_dict)
+
+# 3.  DEL ():
+    # The del keyword will removes the item with sepecified key name 
+
+# my_dict = {
+#     "brand" : 'Toyota',
+#     "model" : "Corolla"
+# } 
+# del my_dict['brand']
+
+# print(my_dict)
+
+    # The del keyword can also delete dictionary completely 
+
+# my_dict = {
+#     "brand" : "Toyota",
+#     "model" : "Corolla"
+# }
+
+# del my_dict
+# print(my_dict)
+
+# 4 . CLEAR ():
+    # The clear () method is used to empty dictionary
+
+# my_dict = {
+#     "brand" : "Toyota",
+#     "model" : "Corolla"
+# }
+# my_dict.clear()
+
+# print(my_dict)
+
+# LOOP THROUGH A DICTIONARY 
+    # We can loop through a dictionary using for loop 
+    # When looping through a dictionary , the return values are the keys from dictionary , but there
+# are methods to return values as well 
+
+# my_dict = {
+#     "brand" : "Toyota",
+#     "model" : "Corolla",
+#     "color" : 'Black'
+# }
+
+    # Print all names of keys one-by-one
+
+# for key in my_dict:
+    # print(key)
+
+    # We can also use keys () method to prints key from dictionary
+
+# for keys in my_dict.keys():
+#     print(keys)
+
+    # Print all values from keys one-by-one
+
+# for values in my_dict:
+#     print(my_dict[values])
+
+    # We can also use values() method to return values from dictionary
+
+# for values in my_dict.values():
+#     print(values) 
+
+    # Loop through both key , values by using item() method
+
+# for key , values in my_dict.items():
+#     print(key , values)
+
+# COPY DICTIONARY :
+    # We can not copy dictionary by writing this 'dict1 = dict 2' because dict2 will be reference to 
+# dict1 , and changes made in dict1 will also reflect on dict2
+    # There are ways to make copy , one is to use built-in method copy()
+
+# my_dict = {
+#     "brand" : "Toyota",
+#     "model" : "Corolla"
+# }
+
+# new_dict = my_dict.copy()
+# print(new_dict)
+
+    # Another way is to make copy by using built-in function dict()
+
+# my_dict = {
+#     "brand" : "Toyota",
+#     "model" : "Corolla"
+# }
+
+# new_dict = dict(my_dict)
+# print(new_dict)
+
+# NESTED DICTIONARY :
+    # A dictionary can also contain dictionary , this method is called nested dictionary
+
+# family = {
+#     "child1" : {
+#         "name" : "Ahmed",
+#         'age' : 20
+#     },
+#     "child2" : {
+#         "name" : "Rafay",
+#         "age" : 16
+#     },
+#     "child3" : {
+#         "name" : "John",
+#         'age' : 12
+#     }
+# }
+
+# print(family)
+
+    # Or if we want to add three dictionary into new dictionary 
+
+# child1 = {
+#     "name" : "Ahmed",
+#     "age" : 20
+# },
+
+# child2 = {
+#     "name" : "Rafay",
+#     'age' : 16
+# }
+
+# child3 = {
+#     "name" : "John",
+#     "age" : 12
+# }
+
+# new_dict = {
+#     "child1" : child1,
+#     'child2' : child2,
+#     'child3' : child3
+# }
+# print(new_dict)
+
+# ACCESS ITEMS IN NESTED DICTIONARY :
+    # We can access items ion nested dictionary by using the name of dictionary starting from
+# outer dictionary 
+
+# family = {
+#     "child1" : {
+#         "name" : "Ahmed",
+#         'age' : 20
+#     },
+#     "child2" : {
+#         "name" : "Rafay",
+#         "age" : 16
+#     },
+#     "child3" : {
+#         "name" : "John",
+#         'age' : 12
+#     }
+# }
+
+# print(family["child1"]['age'])
+
+# LOOP THROUGH NESTED DICTIONARY :
+    # We can loop through nested dictionary by using items() method like this 
+
+# family = {
+#     "child1" : {
+#         "name" : "Ahmed",
+#         'age' : 20
+#     },
+#     "child2" : {
+#         "name" : "Rafay",
+#         "age" : 16
+#     },
+#     "child3" : {
+#         "name" : "John",
+#         'age' : 12
+#     }
+# }
+
+# for keys , obj in family.items():
+#     print(keys)
+
+#     for values in obj:
+#         print(values + ':' , obj[values])
 
 
 
