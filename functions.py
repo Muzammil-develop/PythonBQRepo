@@ -227,7 +227,61 @@
 
 # tri_recursion(6)
 
+# LAMBDA FUNCTION :
+    # A lambda function is a small anonymous function that can take any number of arguments but can
+# only have one expression .
 
+# SYNTAX :
+    # lambda arguments : expression
+
+    # The expression is executed and result is returned
+
+# x = lambda a : a + 10
+# print(x(5))
+
+    # lambda function can take any number of arguments
+
+# a = lambda x , y : x * y
+# print(a(5 , 6))
+
+    # Summarize arguments a + b + c  and return result .
+
+# a = lambda x , y , z : x + y + z
+# print(a(5,6,7))
+
+# WHY USE LAMBDA FUNCTION :
+    # The power of lambda is better shown when we use them as an anonymous function inside another 
+# function . 
+    # say we have a function definition that takes 1 argument , and that argument will be multiplied 
+# with unknown number 
+
+# def func(n):
+#     return lambda a : a * n 
+
+# result = func(2)
+# print(result(11)) 
+
+    # Or use the same function definition to mke a function that always triple the number we sent in .
+
+# def func(n):
+#     return lambda a : a * n 
+
+# result = func(3)
+# print(result(11))
+    
+    # Or use the same function definition to make both functions , in same program
+    
+# def func(n):
+#     return lambda a : a * n
+
+# double = func(2)
+# triple = func(3)
+
+# print(double(11))
+# print(triple(11))
+
+# NOTE :
+    # Use the lambda function when an anonymous function is requird for a short period of time
 
 
 
