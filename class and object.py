@@ -87,10 +87,88 @@
 # p.func()
 
 # NOTE:
-    # The self parameter is the reference to the current insance of class , and is used to access 
+    # The self parameter is the reference to the current instance of class , and is used to access 
 # the variables that belong to the class 
 
+# SELF PARAMETER :
+    # The selfparameter is the refernce ofto the current instance of class , and is used to access
+# the variables that belongs to the class .
+    # It does not have to be named self, we can call it whatever we like , but it has to first parameter
+# of the any function in the class
 
+# class Person:
+
+#     def __init__(mysillyobject,name,age):
+#         mysillyobject.name = name
+#         mysillyobject.age = age
+
+#     def func(abc):
+#         print('Hello my name is ' + abc.name )
+
+# p = Person('John' , 36)
+# p.func()
+
+# MODIFY OBJECT PROPERTIES :
+    # We can modify the properties on object like this
+
+# class Person:
+
+#     def __init__(mysillyobject,name,age):
+#         mysillyobject.name = name
+#         mysillyobject.age = age
+
+#     def func(abc):
+#         print('Hello my name is ' + abc.name )
+
+# p = Person('John' , 36)
+# p.func()
+# p.age = 40
+
+# print(p.age)
+
+# DELETE OBJECT PROPERTIES:
+    # We can delete object properties by using del keyword 
+
+# class Person:
+
+#     def __init__(mysillyobject,name,age):
+#         mysillyobject.name = name
+#         mysillyobject.age = age
+
+#     def func(abc):
+#         print('Hello my name is ' + abc.name )
+
+# p = Person('John' , 36)
+# p.func()
+# p.age = 40
+
+# del p.age 
+
+# print(p.age)
+
+# DELETE OBJECT :
+    # We can delete any object by using del keyword .
+
+# class Person:
+
+#     def __init__(self,name,age):
+#         self.name = name
+#         self.age = age
+
+#     def func(abc):
+#         print('Your Age is ' + abc.age)
+
+# p = Person('John' , 25)
+
+# del p
+# print(p.age)
+
+# PASS STATEMENT :
+    # We can use pass statement if we want our class definition empty . If we can not use pass it throw
+# an error .
+
+# class Person:
+#     pass
 
 
 
