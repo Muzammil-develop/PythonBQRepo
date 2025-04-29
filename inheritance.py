@@ -8,18 +8,18 @@
 # CREATE A PARENT CLASS :
     # Any class can be parent class so the syntax is the same as creating any other class.
 
-class Person:
+# class Person:
 
-    def __init__(self ,name , age):
-        self.name = name
-        self.age = age
+#     def __init__(self ,name , age):
+#         self.name = name
+#         self.age = age
 
-    def func(self ):
-        print('Your Name is ' + self.name)
+#     def func(self ):
+#         print('Your Name is ' + self.name)
 
     
-p = Person('John' , 25)
-p.func()
+# p = Person('John' , 25)
+# p.func()
 
 # CREATE A CHILD CLASS :
     # To create a cass that inherits the functionality from another class , send the parent class as 
@@ -78,8 +78,42 @@ p.func()
     # By using super() function we do not have to use the name of the parent element , it will 
 # automatically inherit the methods and properties from its parent .
 
+# ADD PROPERTY:
+    
+# class Student(Person):
 
+#     def __init__(self, name, age):
+#         super().__init__(name, age)
+#         self.graduation_year = 2015
 
+    # In the example above the year 2019 should be a variables and passed into Student class when 
+# creating student objects . To do so add another parameter in the __init__() function .
+
+# class Student(Person):
+
+#     def __init__(self, name, age , year):
+#         super().__init__(name, age)
+#         self.graduation_year = year
+
+# x = Student('Mike' , 25 , 2019)
+# print(x.graduation_year)
+
+# ADD METHODS :
+    # If we add a method in the child class with the same name as a function in the parent class , the 
+#  inheritance of the parent method will be overridden. 
+    
+# class Student(Person):
+    
+#     def __init__(self, name, age , year):
+#         super().__init__(name, age)
+#         self.graduation_year = year
+
+#     def welcome(self):
+#         print('Welcome' ,self.name , 'to the class of ' , self.graduation_year)
+
+# x = Student('Mike' , 25 , 2019)
+# print(x.welcome())
+    
 
 
 
