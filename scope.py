@@ -84,18 +84,18 @@
     # The non locaL keyword is used to work with variables inside nested function
     # The non local keyword makes the variable belongs to the outer function.
 
-def my_func():
-    x = 300
+# def my_func():
+#     x = 300
 
-    def inner_func():
-        nonlocal x 
-        x = 'Hello'
+#     def inner_func():
+#         nonlocal x 
+#         x = 'Hello'
 
-    inner_func()
-    return x
+#     inner_func()
+#     return x
 
-# my_func()
-print(my_func())
+# # my_func()
+# print(my_func())
 
 
 
